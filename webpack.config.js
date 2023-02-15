@@ -51,6 +51,12 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+
+      {
+        // 이미지 포멧: PNG, JP(E)G, GIF, SVG, WEBP
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        use: ["file-loader"],
+      },
     ],
   },
 
@@ -59,6 +65,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "app.js",
+    publicPath: "https://wppt.netlify.app/",
   }, // output
 
   devServer: {

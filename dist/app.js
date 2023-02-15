@@ -2130,6 +2130,50 @@ eval("module.exports = \"data:application/font-woff;charset=utf-8;base64, d09GRg
 
 /***/ }),
 
+/***/ "./src/assets/image/cal.png":
+/*!**********************************!*\
+  !*** ./src/assets/image/cal.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"38b22a2310c7e6d6fc8d.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/cal.png?");
+
+/***/ }),
+
+/***/ "./src/assets/image/date.png":
+/*!***********************************!*\
+  !*** ./src/assets/image/date.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"5437e8bc7e9d7026631d.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/date.png?");
+
+/***/ }),
+
+/***/ "./src/assets/image/paint.png":
+/*!************************************!*\
+  !*** ./src/assets/image/paint.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"faf72c06fb8f2aef1a4f.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/paint.png?");
+
+/***/ }),
+
+/***/ "./src/assets/image/pocket.png":
+/*!*************************************!*\
+  !*** ./src/assets/image/pocket.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"243e881606a307a2ae61.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/pocket.png?");
+
+/***/ }),
+
 /***/ "./src/assets/fonts/NanumSquareNeo-aLt.eot":
 /*!*************************************************!*\
   !*** ./src/assets/fonts/NanumSquareNeo-aLt.eot ***!
@@ -2347,50 +2391,6 @@ eval("module.exports = __webpack_require__.p + \"324ece26be02824e94c0.woff\";\n\
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"94e1ff8cc8548100f79c.woff2\";\n\n//# sourceURL=webpack://portfolio/./src/assets/fonts/NanumSquareNeo-eHv.woff2?");
-
-/***/ }),
-
-/***/ "./src/assets/image/cal.png":
-/*!**********************************!*\
-  !*** ./src/assets/image/cal.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"837a012ad622081942bf.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/cal.png?");
-
-/***/ }),
-
-/***/ "./src/assets/image/date.png":
-/*!***********************************!*\
-  !*** ./src/assets/image/date.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"fcaab1dd77d403f03b12.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/date.png?");
-
-/***/ }),
-
-/***/ "./src/assets/image/paint.png":
-/*!************************************!*\
-  !*** ./src/assets/image/paint.png ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"b3db68a34e8a434462d0.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/paint.png?");
-
-/***/ }),
-
-/***/ "./src/assets/image/pocket.png":
-/*!*************************************!*\
-  !*** ./src/assets/image/pocket.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"5f4d6c36a1c33b8313b5.png\";\n\n//# sourceURL=webpack://portfolio/./src/assets/image/pocket.png?");
 
 /***/ }),
 
@@ -3962,22 +3962,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = "https://wppt.netlify.app/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
