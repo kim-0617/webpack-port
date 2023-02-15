@@ -1,5 +1,6 @@
 const path = require("path");
 const RefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   name: "portfolio-setting",
@@ -60,7 +61,12 @@ module.exports = {
     ],
   },
 
-  plugins: [new RefreshWebpackPlugin()],
+  plugins: [
+    new RefreshWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve("./index.html"),
+    }),
+  ],
 
   output: {
     path: path.join(__dirname, "/dist"),
