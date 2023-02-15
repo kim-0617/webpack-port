@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack serve --env development",
-    "build": "webpack --mode production"
+    "build": "webpack"
   },
   "author": "kim",
   "license": "MIT",

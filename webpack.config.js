@@ -1,10 +1,9 @@
 const path = require("path");
 const RefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   name: "portfolio-setting",
-  mode: "production",
+  mode: "development",
   devtool: "eval",
   resolve: {
     extensions: [".jsx", ".js", ".json"],
@@ -19,6 +18,7 @@ module.exports = {
       {
         test: /\.jsx?/,
         loader: "babel-loader",
+        exclude: /node_modules/,
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
           plugins: ["react-refresh/babel"],
@@ -54,12 +54,7 @@ module.exports = {
     ],
   },
 
-  plugins: [
-    new RefreshWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve("./index.html"),
-    }),
-  ],
+  plugins: [new RefreshWebpackPlugin()],
 
   output: {
     path: path.join(__dirname, "/dist"),
@@ -67,9 +62,8 @@ module.exports = {
   }, // output
 
   devServer: {
-    // devMiddleware: { publicPath: "/dist" },
-    // static: { directory: path.resolve(__dirname) },
-    // hot: true,
-    contentBase: "./build",
+    devMiddleware: { publicPath: "/dist" },
+    static: { directory: path.resolve(__dirname) },
+    hot: true,
   },
 };
