@@ -1,0 +1,493 @@
+#coding {
+  overflow: hidden;
+  position: relative;
+  // height: 430vh;
+  z-index: 400;
+
+  #CodingIntro {
+    width: 100%;
+    background: var(--background2);
+    position: relative;
+    // padding: 30vh 0 45vh 0;
+    .CodingIntro__inner {
+      padding: 15vw 0 15vw 0;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        background-image: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/be922086e7b9947b20b067ddf3c0b458ae591517/public/image/workwave2.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      > div {
+        font-size: 15vw;
+        font-family: 'Anton';
+        line-height: 1;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+
+        span {
+          &.line {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px #fff;
+          }
+          &.space {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .particletext {
+      text-align: center;
+      position: relative;
+    }
+    .particletext.bubbles > .particle {
+      opacity: 0;
+      position: absolute;
+      background-color: rgba(33, 150, 243, 0.5);
+      animation: bubbles 3s ease-in infinite;
+      border-radius: 100%;
+    }
+
+    // .bubble {
+    //   width: 105%;
+    //   height: 48vh;
+    //   background: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/38076174125279e822942a176371d79ada30fc63/public/image/svg/bubble.svg')
+    //     no-repeat center / cover;
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 0;
+    //   transform: translateY(10%) !important;
+    // }
+  }
+
+  #CodingWork {
+    width: 100%;
+    background: var(--background1);
+    position: relative;
+    padding-bottom: 15vw;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      bottom: -77px;
+      left: 0;
+      background-image: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/38076174125279e822942a176371d79ada30fc63/public/image/svg/workwave.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    h2 {
+      font-size: 7vw;
+      font-family: var(--font2);
+      text-align: center;
+      padding-top: 5vw;
+      line-height: 1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: var(--font-color2);
+    }
+
+    > p {
+      text-align: center;
+      font-family: var(--font1);
+      margin-bottom: 70px;
+      font-weight: 400;
+      font-size: 1vw;
+      color: var(--font-color2);
+    }
+
+    .CodingWork__inner {
+      // width: 1556px;
+      // width: 81vw;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // > img {
+      //   display: block;
+      //   width: 33vw;
+      //   margin-right: 6.2vw;
+      //   margin-bottom: 40px;
+      // }
+
+      .menu {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        width: 81vw;
+        height: 20vh;
+        margin-top: 15px;
+        padding: 1.3vw;
+        padding-left: 2vw;
+
+        .menu__list {
+          margin-bottom: 1vw;
+          li {
+            display: inline-block;
+            user-select: none;
+            &.standard.active a {
+              color: rgb(167, 163, 208);
+            }
+            &.responsive.active a {
+              color: rgb(153, 145, 145);
+            }
+            &.effect.active a {
+              color: rgb(249, 209, 194);
+            }
+            &.games.active a {
+              color: rgb(238, 206, 135);
+            }
+            &.phpSite.active a {
+              color: rgb(185, 207, 193);
+            }
+            &.vueSite.active a {
+              color: rgb(250, 189, 163);
+            }
+            &.reactSite.active a {
+              color: rgb(177, 198, 223);
+            }
+            a {
+              font-family: var(--font3);
+              font-weight: 400;
+              font-size: 22px;
+              color: var(--font-color4);
+              font-weight: 400;
+              font-weight: bold;
+              padding-right: 2vw;
+            }
+          }
+        }
+
+        .menu__conts {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+          > div {
+            width: 85px;
+            height: 85px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center 10px;
+            border: 7px solid #15bab8;
+            margin-right: 2vw;
+            background-size: contain;
+            border-radius: 5px;
+            transition: border-radius 1s;
+            &:hover {
+              border-radius: 100px;
+            }
+            &.bdrs {
+              border-radius: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #CodingWorkList {
+    width: 100%;
+    margin: 0 auto;
+    background: var(--white);
+    color: var(--font-color2);
+    padding: 10vw 0;
+    height: 200vh;
+    
+    h2 {
+      font-size: 7vw;
+      font-family: var(--font2);
+      text-align: center;
+      padding-top: 5vw;
+      line-height: 1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    > p {
+      text-align: center;
+      font-family: var(--font1);
+      margin-bottom: 125px;
+      font-weight: 400;
+      font-size: 1vw;
+    }
+
+    .CodingWorkList__inner {
+      width: 64vw;
+      margin: 0 auto;
+      .list__conts {
+        display: flex;
+        flex-wrap: wrap;
+        .list__conts__detail {
+          width: 48.5%;
+          margin-right: 3%;
+          padding: 25px 0 10px 0;
+          border-top: 1px solid var(--font-color2);
+          display: flex;
+          min-height: 18vh;
+          box-sizing: border-box;
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+
+          &:nth-child(8),
+          &:nth-child(9) {
+            border-bottom: 1px solid var(--font-color2);
+          }
+          .list__conts__detail__title {
+            width: 25%;
+            margin-right: 5%;
+            font-family: var(--font1);
+            font-weight: 400;
+            word-break: keep-all;
+          }
+
+          .list__conts__detail__desc {
+            width: 70%;
+            li {
+              margin-bottom: 15px;
+              position: relative;
+              box-sizing: border-box;
+
+              a {
+                font-family: var(--font1);
+                font-weight: 400;
+                color: var(--font-color2);
+
+                span {
+                  display: block;
+                  width: 100%;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+
+                  &.sf {
+                    font-size: 12px;
+                  }
+                }
+                // &.hover-underline-animation {
+                //   display: inline-block;
+                //   position: relative;
+                //   color: var(--font-color2);
+                // }
+
+                // &.hover-underline-animation::after {
+                //   content: '';
+                //   position: absolute;
+                //   width: 100%;
+                //   height: 3px;
+                //   transform: scaleX(0);
+                //   bottom: -1px;
+                //   left: 0;
+                //   background-color: #0087ca;
+                //   transform-origin: bottom right;
+                //   transition: transform 0.5s ease-out;
+                // }
+
+                // &.hover-underline-animation:hover::after {
+                //   transform: scaleX(1);
+                //   transform-origin: bottom left;
+                // }
+
+                &:hover::before {
+                  background: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/296a2bb993c6a53bcefd0d6cf14846ba630c7b7d/public/image/checkFill.svg')
+                    no-repeat center / contain;
+                }
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: 19vw;
+                  top: -2px;
+                  background: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/296a2bb993c6a53bcefd0d6cf14846ba630c7b7d/public/image/check.svg')
+                    no-repeat center / contain;
+                  width: 24px;
+                  height: 26px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.checknone {
+  a {
+    &::before {
+      background: none !important;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  #coding {
+    #CodingIntro {
+      .CodingIntro__inner {
+        &::after {
+          background-image: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/26ddfb2768ecd15f5f1cf1247046b2083e9f75cb/public/image/workwave3.svg');
+        }
+      }
+    }
+    #CodingWork {
+      display: none;
+    }
+
+    #CodingWorkList {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  #coding {
+    #CodingWorkList {
+      h2 {
+        margin-top: 15vw;
+      }
+
+      > p {
+      }
+
+      .CodingWorkList__inner {
+        .list__conts {
+          display: flex;
+          flex-wrap: wrap;
+          .list__conts__detail {
+            width: 100%;
+
+            &:nth-child(8) {
+              border-bottom: 0;
+            }
+            .list__conts__detail__title {
+              font-size: 16px;
+              word-break: keep-all;
+              width: 35%;
+            }
+
+            .list__conts__detail__desc {
+              li {
+                a {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+
+                  &::before {
+                    display: none;
+                  }
+                }
+                &::before {
+                  content: '';
+                  position: absolute;
+                  left: 30vw;
+                  top: -8px;
+                  background: url('https://raw.githubusercontent.com/kim-0617/PORTFOLIO/38076174125279e822942a176371d79ada30fc63/public/image/svg/check.svg')
+                    no-repeat center / contain;
+                  width: 34px;
+                  height: 36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #coding {
+    #CodingIntro {
+      padding-bottom: 16vw;
+    }
+
+    #CodingWorkList {
+      h2 {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  #coding {
+    #CodingWorkList {
+      h2 {
+        margin-top: 7vw;
+        font-size: 40px !important;
+      }
+
+      > p {
+        margin-bottom: 50px;
+      }
+
+      .CodingWorkList__inner {
+        width: 90vw;
+        .list__conts {
+          display: flex;
+          flex-wrap: wrap;
+          .list__conts__detail {
+            width: 100%;
+            justify-content: space-between;
+
+            &:nth-child(7) {
+              border-bottom: 0;
+            }
+            .list__conts__detail__title {
+              font-size: 16px;
+              word-break: keep-all;
+              width: 25%;
+            }
+
+            .list__conts__detail__desc {
+              width: 60%;
+              li {
+                a {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 70%;
+
+                  &::before {
+                    display: none;
+                  }
+                }
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes bubbles {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(0, -20%) scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) scale(1.5);
+  }
+}
