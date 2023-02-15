@@ -48,7 +48,7 @@ function Game(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/4-${
+            backgroundImage: `url('./assets/image/icon/4-${
               infoIndex + 1
             }.png')`,
             borderColor: "#C2A66A",

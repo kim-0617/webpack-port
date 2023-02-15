@@ -157,7 +157,7 @@ function Slider({ src, index, data }) {
           </button>
         </div>
       </div>
-      <img src={`src/assets/${src}`} alt={`${index}번째 이미지`} />
+      <img src={`./assets/${src}`} alt={`${index}번째 이미지`} />
     </>
   );
 }

@@ -163,7 +163,7 @@ function Intro({ isLoading }, ref) {
           </h2>
           <div className="myImg mouse__target" ref={thirdTarget}>
             <img
-              src="/src/assets/image/intro.png"
+              src="./assets/image/intro.png"
               alt="메인페이지 사진입니다."
               ref={thirdTargetChild}
             />

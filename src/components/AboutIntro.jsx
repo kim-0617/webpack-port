@@ -50,7 +50,7 @@ function AboutIntro({ scroll }) {
         <div className="aImg" ref={thirdTarget}>
           <img
             style={{ userSelect: "none" }}
-            src="/src/assets/image/about.png"
+            src="./assets/image/about.png"
             alt="어바웃페이지 사진입니다."
             ref={thirdTargetChild}
           />

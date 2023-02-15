@@ -44,7 +44,7 @@ function Responsive(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/2-${
+            backgroundImage: `url('./assets/image/icon/2-${
               infoIndex + 1
             }.png')`,
             borderColor: "#A2A2A2",

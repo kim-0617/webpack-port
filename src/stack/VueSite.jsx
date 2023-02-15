@@ -34,7 +34,7 @@ function VueSite(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/6-${
+            backgroundImage: `url('./assets/image/icon/6-${
               infoIndex + 1
             }.png')`,
             borderColor: "#C99B87",

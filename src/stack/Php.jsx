@@ -40,7 +40,7 @@ function Php(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/5-${
+            backgroundImage: `url('./assets/image/icon/5-${
               infoIndex + 1
             }.png')`,
             borderColor: "#8DAA98",

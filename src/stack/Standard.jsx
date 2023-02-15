@@ -48,7 +48,7 @@ function standard(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/1-${
+            backgroundImage: `url('./assets/image/icon/1-${
               infoIndex + 1
             }.png')`,
             borderColor: "#737199",

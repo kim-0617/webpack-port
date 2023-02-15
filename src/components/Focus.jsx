@@ -32,7 +32,7 @@ function Focus() {
         <div className="mask"></div>
       </h2>
       <div className="focus__inner">
-        <img src="src/assets/image/focus.png" alt="포커스페이지 사진입니다." />
+        <img src="./assets/image/focus.png" alt="포커스페이지 사진입니다." />
         <div className="focus__conts">
           <div className="focus__conts__detail">
             <h3>빨리 바뀌는 개발 트렌드에 적응하다! </h3>

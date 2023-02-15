@@ -68,7 +68,7 @@ function ReactSite(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('src/assets/image/icon/7-${
+            backgroundImage: `url('./assets/image/icon/7-${
               infoIndex + 1
             }.png')`,
             borderColor: "#879AAA",

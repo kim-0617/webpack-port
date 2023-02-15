@@ -1,0 +1,214 @@
+#intro {
+  background-color: var(--background2);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  .intro__inner {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      text-align: center;
+      font-family: var(--font2);
+      font-size: 19vw;
+      line-height: 1;
+      user-select: none;
+
+      > span {
+        opacity: 0;
+        display: block;
+      }
+    }
+
+    .myImg {
+      // transform: translate(25vw, 10vw) !important;
+      position: absolute;
+      right: 5vw !important;
+      bottom: 12vw !important;
+      width: 35vw;
+      height: 20vw;
+      background-size: contain;
+      transform-origin: bottom right;
+      z-index: 2;
+      user-select: none;
+      img {
+        display: block;
+      }
+    }
+
+    .paint {
+      background: url('../image/paint.png') no-repeat center / cover;
+      width: 11vw;
+      height: 11vw;
+      position: absolute;
+      // transform: translate(-17vw, -17vw) !important;
+      left: 27% !important;
+      top: 17% !important;
+      z-index: 3;
+    }
+
+    .pocket {
+      background: url('../image/pocket.png') no-repeat center / cover;
+      width: 11vw;
+      height: 11vw;
+      position: absolute;
+      // transform: translate(-2vw, 13vw) !important;
+      top: 67% !important;
+      left: 42% !important;
+      z-index: 3;
+    }
+  }
+}
+
+// @media (max-width: 1220px) {
+//   #intro {
+//     .intro__inner {
+//       .myImg {
+//         width: 40vw;
+//         bottom: 2vw;
+//         right: -7vw !important;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   #intro {
+//     .intro__inner {
+//       .myImg {
+//         width: 60vw;
+//         bottom: -5vw;
+//         right: -25vw !important;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 486px) {
+//   #intro {
+//     .intro__inner {
+//       h2 {
+//         margin-bottom: 50px;
+//       }
+//       .myImg {
+//         width: 75vw;
+//         bottom: -12vw;
+//         right: -35vw !important;
+//       }
+//       .paint {
+//         transform: translate(-17vw, -24vw) !important;
+//       }
+
+//       .pocket {
+//         transform: translate(-2vw, 9vw) !important;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 1080px) {
+  #intro {
+    height: 100vh;
+    .intro__inner {
+      .myImg {
+        width: 50vw;
+        height: 30vh;
+        bottom: 18vw !important;
+        right: -10vw !important;
+        background-position: right bottom -10vh;
+      }
+
+      .paint {
+        top: 25% !important;
+        left: 29% !important;
+      }
+
+      .pocket {
+        top: 58% !important;
+        left: 40% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  #intro {
+    height: 100vh;
+    .intro__inner {
+      .myImg {
+        width: 55vw;
+        height: 20vh;
+        bottom: 30vw !important;
+        right: -10vw !important;
+      }
+
+      .paint {
+        top: 32% !important;
+        left: 24% !important;
+      }
+
+      .pocket {
+        top: 58% !important;
+        left: 40% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #intro {
+    height: 100vh;
+    .intro__inner {
+      .myImg {
+        width: 65vw;
+        height: 24vh;
+        bottom: 16vw !important;
+        right: -13vw !important;
+      }
+
+      .paint {
+        top: 39% !important;
+        left: 24% !important;
+      }
+
+      .pocket {
+        top: 58% !important;
+        left: 40% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  #intro {
+    height: 100vh;
+    .intro__inner {
+      .myImg {
+        width: 78vw;
+        height: 25vh;
+        bottom: 14vw;
+        right: -10vw !important;
+      }
+
+      .paint {
+        top: 40% !important;
+        left: 32% !important;
+      }
+
+      .pocket {
+        top: 55% !important;
+        left: 40% !important;
+      }
+    }
+  }
+}
