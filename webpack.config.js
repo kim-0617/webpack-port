@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   name: "portfolio-setting",
-  mode: "development",
+  mode: "production",
   devtool: "eval",
   resolve: {
     extensions: [".jsx", ".js", ".json"],
@@ -19,7 +19,6 @@ module.exports = {
       {
         test: /\.jsx?/,
         loader: "babel-loader",
-        exclude: /node_modules/,
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
           plugins: ["react-refresh/babel"],
@@ -52,12 +51,6 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
-
-      {
-        // 이미지 포멧: PNG, JP(E)G, GIF, SVG, WEBP
-        test: /\.(png|jpe?g|gif|svg|webp)$/i,
-        use: ["file-loader"],
-      },
     ],
   },
 
@@ -71,12 +64,12 @@ module.exports = {
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "app.js",
-    publicPath: "https://wppt.netlify.app/",
   }, // output
 
   devServer: {
-    devMiddleware: { publicPath: "/dist" },
-    static: { directory: path.resolve(__dirname) },
-    hot: true,
+    // devMiddleware: { publicPath: "/dist" },
+    // static: { directory: path.resolve(__dirname) },
+    // hot: true,
+    contentBase: "./build",
   },
 };
