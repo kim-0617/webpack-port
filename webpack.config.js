@@ -4,8 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   name: "portfolio-setting",
+
   mode: "development",
+
   devtool: "eval",
+
   resolve: {
     extensions: [".jsx", ".js", ".json"],
   },
