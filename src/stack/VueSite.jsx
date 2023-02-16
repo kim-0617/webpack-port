@@ -8,6 +8,14 @@ import React, {
 import { ChangeContext } from "../context/ChangeContext";
 import { bdrs, onClickSite } from "../hooks/useStack";
 
+import img1 from "/src/assets/image/icon/6-1.png";
+import img2 from "/src/assets/image/icon/6-2.png";
+
+const imgConfig = {
+  0: img1,
+  1: img2,
+};
+
 function VueSite(prop, ref) {
   const info = [
     { cn: "sixOne", name: "VUE 6-1" },
@@ -34,9 +42,7 @@ function VueSite(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url(https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/icon/6-${
-              infoIndex + 1
-            }.png?raw=true)`,
+            backgroundImage: `url('${imgConfig[infoIndex]}')`,
             borderColor: "#C99B87",
             backgroundColor: "#FABDA3",
           }}

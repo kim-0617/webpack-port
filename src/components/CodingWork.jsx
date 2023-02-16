@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Selector, Slider } from "./";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ChangeContext } from "../context/ChangeContext";
-import { items } from "../utils/info";
+import data from "../utils/info.json";
 
 // Import Swiper styles
 import "swiper/css";
@@ -258,7 +258,7 @@ function CodingWork() {
           >
             {type.map((x, i) => (
               <SwiperSlide key={x}>
-                <Slider src={x} index={i} data={items[i]} />
+                <Slider src={x} index={i} data={data.items[i]} />
               </SwiperSlide>
             ))}
           </Swiper>

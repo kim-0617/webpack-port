@@ -8,6 +8,18 @@ import React, {
 import { ChangeContext } from "../context/ChangeContext";
 import { bdrs, onClickSite } from "../hooks/useStack";
 
+import img1 from "/src/assets/image/icon/3-1.png";
+import img2 from "/src/assets/image/icon/3-2.png";
+import img3 from "/src/assets/image/icon/3-3.png";
+import img4 from "/src/assets/image/icon/3-4.png";
+
+const imgConfig = {
+  0: img1,
+  1: img2,
+  2: img3,
+  3: img4,
+};
+
 function Effect(prop, ref) {
   const { index } = useContext(ChangeContext);
   const info = [
@@ -48,9 +60,7 @@ function Effect(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url(https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/icon/3-${
-              infoIndex + 1
-            }.png?raw=true)`,
+            backgroundImage: `url(${imgConfig[infoIndex]})`,
             borderColor: "#B89186",
             backgroundColor: "#F9D1C2",
           }}

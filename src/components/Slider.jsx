@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { sliderMapping } from "../utils/sliderMapping";
 
 const address = [
   // 소스보기, 데모보기
@@ -187,7 +188,7 @@ function Slider({ src, index, data }) {
           </button>
         </div>
       </div>
-      <img src={mappingTable[index]} alt={`${index}번째 이미지`} />
+      <img src={sliderMapping[index]} alt={`${index}번째 이미지`} />
     </>
   );
 }

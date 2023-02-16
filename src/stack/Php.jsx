@@ -8,6 +8,14 @@ import React, {
 import { ChangeContext } from "../context/ChangeContext";
 import { bdrs, onClickSite } from "../hooks/useStack";
 
+import img1 from "/src/assets/image/icon/5-1.png";
+import img2 from "/src/assets/image/icon/5-2.png";
+
+const imgConfig = {
+  0: img1,
+  1: img2,
+};
+
 function Php(prop, ref) {
   const { index } = useContext(ChangeContext);
   const info = [
@@ -40,9 +48,7 @@ function Php(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url(https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/icon/5-${
-              infoIndex + 1
-            }.png?raw=true)`,
+            backgroundImage: `url('${imgConfig[infoIndex]}')`,
             borderColor: "#8DAA98",
             backgroundColor: "#B9CFC1",
           }}
