@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Selector, Slider } from "./";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ChangeContext } from "../context/ChangeContext";
+import { items } from "../utils/info";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,7 +10,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/bundle";
 
-// import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const type = [
@@ -129,19 +129,19 @@ function CodingWork() {
   const [stack, setStack] = useState("Standard");
   const [index, setIndex] = useState(0);
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
-  const [DESC, SetDESC] = useState([]);
+  // const [DESC, SetDESC] = useState([]);
 
   const swiperRef = useRef(null);
   const menuRef = useRef([]);
 
-  useEffect(() => {
-    fetch("https://kim-0617.github.io/PORTFOLIO/src/utils/info.json")
-      .then((response) => response.json())
-      .then((result) => {
-        SetDESC(result.items);
-      })
-      .catch((error) => console.log("error", error));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://kim-0617.github.io/PORTFOLIO/src/utils/info.json")
+  //     .then((response) => response.json())
+  //     .then((result) => {
+  //       SetDESC(result.items);
+  //     })
+  //     .catch((error) => console.log("error", error));
+  // }, []);
 
   useEffect(() => {
     switch (stack) {
@@ -258,7 +258,7 @@ function CodingWork() {
           >
             {type.map((x, i) => (
               <SwiperSlide key={x}>
-                <Slider src={x} index={i} data={DESC[i]} />
+                <Slider src={x} index={i} data={items[i]} />
               </SwiperSlide>
             ))}
           </Swiper>

@@ -1,6 +1,9 @@
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Ball, BallDown } from "../others";
+import introPic from "../assets/image/intro.png";
+import pocket from "../assets/image/pocket.png";
+import paint from "../assets/image/paint.png";
 
 function Intro({ isLoading }, ref) {
   const [isDown, setIsDown] = useState(true);
@@ -163,15 +166,27 @@ function Intro({ isLoading }, ref) {
           </h2>
           <div className="myImg mouse__target" ref={thirdTarget}>
             <img
-              src="./assets/image/intro.png"
+              src={introPic}
               alt="메인페이지 사진입니다."
               ref={thirdTargetChild}
             />
           </div>
-          <div className="paint mouse__target" ref={secondTarget}>
+          <div
+            className="paint mouse__target"
+            ref={secondTarget}
+            style={{
+              background: `url('${paint}') no-repeat center / cover`,
+            }}
+          >
             <span className="ir">물감통그림</span>
           </div>
-          <div className="pocket mouse__target" ref={firstTarget}>
+          <div
+            className="pocket mouse__target"
+            ref={firstTarget}
+            style={{
+              background: `url('${pocket}') no-repeat center / cover`,
+            }}
+          >
             <span className="ir">주머니 그림</span>
           </div>
         </div>

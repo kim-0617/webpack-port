@@ -1,6 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Rec } from "../others";
 import gsap from "gsap";
+
+import about from "../assets/image/about.png";
+import calc from "../assets/image/date.png";
+import date from "../assets/image/cal.png";
 
 function AboutIntro({ scroll }) {
   const titleRef = useRef(null);
@@ -50,15 +54,27 @@ function AboutIntro({ scroll }) {
         <div className="aImg" ref={thirdTarget}>
           <img
             style={{ userSelect: "none" }}
-            src="./assets/image/about.png"
+            src={about}
             alt="어바웃페이지 사진입니다."
             ref={thirdTargetChild}
           />
         </div>
-        <div className="calc" ref={firstTarget}>
+        <div
+          className="calc"
+          ref={firstTarget}
+          style={{
+            background: `url('${calc}') no-repeat center / cover`,
+          }}
+        >
           <span className="ir">계산기그림</span>
         </div>
-        <div className="date" ref={secondTarget}>
+        <div
+          className="date"
+          ref={secondTarget}
+          style={{
+            background: `url('${date}') no-repeat center / cover`,
+          }}
+        >
           <span className="ir">달력그림</span>
         </div>
       </div>

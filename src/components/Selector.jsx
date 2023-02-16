@@ -1,21 +1,29 @@
-import React, { forwardRef } from 'react';
-import { Standard, Responsive, Effect, Game, Php, VueSite, ReactSite } from '../stack';
+import React, { forwardRef } from "react";
+import {
+  Standard,
+  Responsive,
+  Effect,
+  Game,
+  Php,
+  VueSite,
+  ReactSite,
+} from "../stack";
 
 function Selector({ value }, ref) {
   switch (value) {
-    case 'Standard':
+    case "Standard":
       return <Standard ref={ref} />;
-    case 'Responsive':
+    case "Responsive":
       return <Responsive ref={ref} />;
-    case 'Effect':
+    case "Effect":
       return <Effect ref={ref} />;
-    case 'Game':
+    case "Game":
       return <Game ref={ref} />;
-    case 'Php':
+    case "Php":
       return <Php ref={ref} />;
-    case 'VueSite':
+    case "VueSite":
       return <VueSite ref={ref} />;
-    case 'ReactSite':
+    case "ReactSite":
       return <ReactSite ref={ref} />;
     default:
       return <Standard ref={ref} />;

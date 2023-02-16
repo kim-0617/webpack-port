@@ -48,9 +48,9 @@ function Effect(prop, ref) {
             infoRef.current[infoIndex] = element;
           }}
           style={{
-            backgroundImage: `url('./assets/image/icon/4-${
+            backgroundImage: `url(https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/icon/3-${
               infoIndex + 1
-            }.png')`,
+            }.png?raw=true)`,
             borderColor: "#B89186",
             backgroundColor: "#F9D1C2",
           }}

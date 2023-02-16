@@ -107,9 +107,39 @@ const address = [
   ],
 ];
 
+const mappingTable = {
+  0: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/1-1.png?raw=true`,
+  1: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/1-2.png?raw=true`,
+  2: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/1-3.png?raw=true`,
+  3: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/1-4.png?raw=true`,
+  4: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/2-1.png?raw=true`,
+  5: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/2-2.png?raw=true`,
+  6: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/2-3.png?raw=true`,
+  7: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/3-1.png?raw=true`,
+  8: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/3-2.png?raw=true`,
+  9: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/3-3.png?raw=true`,
+  10: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/3-4.png?raw=true`,
+  11: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/4-1.png?raw=true`,
+  12: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/4-2.png?raw=true`,
+  13: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/4-3.png?raw=true`,
+  14: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/4-4.png?raw=true`,
+  15: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/5-1.png?raw=true`,
+  16: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/5-2.png?raw=true`,
+  17: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/6-1.png?raw=true`,
+  18: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/6-2.png?raw=true`,
+  19: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-1.png?raw=true`,
+  20: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-2.png?raw=true`,
+  21: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-3.png?raw=true`,
+  22: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-4.png?raw=true`,
+  23: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-5.png?raw=true`,
+  24: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-6.png?raw=true`,
+  25: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-7.png?raw=true`,
+  26: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-8.png?raw=true`,
+  27: `https://github.com/kim-0617/PORTFOLIO/blob/master/public/image/mock/7-9.png?raw=true`,
+};
+
 function Slider({ src, index, data }) {
   const [color, setColor] = useState("");
-
   const onClickSource = () => {
     window.open(address[index][0]);
   };
@@ -157,7 +187,7 @@ function Slider({ src, index, data }) {
           </button>
         </div>
       </div>
-      <img src={`./assets/${src}`} alt={`${index}번째 이미지`} />
+      <img src={mappingTable[index]} alt={`${index}번째 이미지`} />
     </>
   );
 }

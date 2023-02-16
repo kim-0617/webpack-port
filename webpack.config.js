@@ -17,12 +17,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.js.*/,
         loader: "babel-loader",
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
           plugins: ["react-refresh/babel"],
         },
+        exclude: ["/node_modules/"],
       },
 
       // Sass 파일 로더 설정
@@ -51,6 +52,12 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+
+      // 이미지 포멧: PNG, JP(E)G, GIF, SVG, WEBP
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        use: ["file-loader"],
+      },
     ],
   },
 
@@ -62,14 +69,13 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, "/dist"),
     filename: "app.js",
+    path: path.join(__dirname, "/dist"),
   }, // output
 
   devServer: {
-    // devMiddleware: { publicPath: "/dist" },
-    // static: { directory: path.resolve(__dirname) },
-    // hot: true,
-    contentBase: "./build",
+    devMiddleware: { publicPath: "/dist" },
+    static: { directory: path.resolve(__dirname) },
+    hot: true,
   },
 };

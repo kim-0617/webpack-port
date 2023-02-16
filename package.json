@@ -40,14 +40,24 @@
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^8.0.1",
+    "raw-loader": "^4.0.2",
     "react-refresh": "^0.14.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.58.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
+    "swc-loader": "^0.2.3",
+    "ts-loader": "^9.4.2",
     "url-loader": "^4.1.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "browser": {
+    "colors": false,
+    "events": "eventemitter3",
+    "checkForModuleDuplicates": false,
+    "url": "./shims/url",
+    "tracer": false
   }
 }
